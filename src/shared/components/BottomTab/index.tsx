@@ -1,5 +1,8 @@
 import { BottomTabButton } from './components/BottomTabButton';
 import HomeIcon from '@/shared/icon/home-icon.svg';
+import MapIcon from '@/shared/icon/map-icon.svg';
+import BookmarkIcon from '@/shared/icon/bookmark-icon.svg';
+import MypageIcon from '@/shared/icon/mypage-icon.svg';
 
 export const BottomTab = () => {
   return (
@@ -10,18 +13,18 @@ export const BottomTab = () => {
         </BottomTabButton>
       </div>
       <div className="w-[25%] h-[56px]">
-        <BottomTabButton name="홈">
-          <HomeIcon />
+        <BottomTabButton name="지도">
+          <MapIcon />
         </BottomTabButton>
       </div>
       <div className="w-[25%] h-[56px]">
-        <BottomTabButton name="홈">
-          <HomeIcon />
+        <BottomTabButton name="북마크">
+          <BookmarkIcon />
         </BottomTabButton>
       </div>
       <div className="w-[25%] h-[56px]">
-        <BottomTabButton name="홈">
-          <HomeIcon />
+        <BottomTabButton name="마이페이지">
+          <MypageIcon />
         </BottomTabButton>
       </div>
     </nav>

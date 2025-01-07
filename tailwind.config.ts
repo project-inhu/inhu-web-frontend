@@ -16,6 +16,9 @@ const config: Config = {
       colors: COLORS,
     },
   },
-  plugins: [],
+  corePlugins: {
+    aspectRatio: false,
+  },
+  plugins: [require('@tailwindcss/aspect-ratio')],
 };
 export default config;
