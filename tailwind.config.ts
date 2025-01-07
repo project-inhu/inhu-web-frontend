@@ -19,6 +19,9 @@ const config: Config = {
   corePlugins: {
     aspectRatio: false,
   },
-  plugins: [require('@tailwindcss/aspect-ratio')],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+    require('tailwind-scrollbar-hide'),
+  ],
 };
 export default config;

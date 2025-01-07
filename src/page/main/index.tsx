@@ -1,5 +1,6 @@
 'use client';
 
+import { PlaceSection } from '@/page/main/components/PlaceSection';
 import { MainBanner } from '@/shared/components/MainBanner';
 import MainLogo from '@/shared/icon/logo.svg';
 import { PlaceCard } from '@/widget/place/PlaceCard';
@@ -17,24 +18,15 @@ export const MainPage = () => {
         </div>
       </header>
       <main className="flex-1">
-        <section className="w-full mt-[28px]">
-          <h2 className="ml-[20px] font-semibold text-[20px]">
-            인하대 후문에
-            <br />
-            새로 생긴 곳이에요!
-          </h2>
-          <div className="mt-[12px]">
-            <ScrollContainer className="flex">
-              <div className="flex gap-[8px] [&>*:first-child]:ml-[20px] [&>*:last-child]:mr-[20px]">
-                <PlaceCard />
-                <PlaceCard />
-                <PlaceCard />
-                <PlaceCard />
-                <PlaceCard />
-              </div>
-            </ScrollContainer>
-          </div>
-        </section>
+        <PlaceSection className="mt-[28px]">
+          인하대 후문에
+          <br />
+          새로 생긴 곳이에요!
+        </PlaceSection>
+        <PlaceSection className="mt-[36px]">추천드리는 장소예요!</PlaceSection>
+        <PlaceSection className="mt-[36px]">
+          인후프로러들의 여긴 어때요?
+        </PlaceSection>
       </main>
     </div>
   );

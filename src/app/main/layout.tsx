@@ -7,7 +7,9 @@ export default function MainLayout({
 }>) {
   return (
     <div className="max-w-[600px] w-full h-[100vh] flex flex-col mx-auto">
-      <div className="flex-1">{children}</div>
+      <div className="flex-1 overflow-y-scroll scrollbar-hide pb-[37px]">
+        {children}
+      </div>
       <BottomTab />
     </div>
   );

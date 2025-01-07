@@ -9,3 +9,15 @@ export type StrictPropsWithChildren<T = unknown, U = ReactNode> = T & {
    */
   children: U;
 };
+
+/**
+ * className을 가지는 컴포넌트
+ */
+export type PropsWithClassName<T = unknown> = T & {
+  /**
+   * 클래스
+   *
+   * @default ""
+   */
+  className?: string;
+};
