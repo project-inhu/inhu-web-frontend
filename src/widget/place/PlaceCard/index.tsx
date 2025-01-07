@@ -3,7 +3,7 @@ import MapIcon from '@/shared/icon/map-icon.svg';
 
 export const PlaceCard = () => {
   return (
-    <article className="relative w-[120px] cursor-pointer">
+    <article className="relative w-[120px] cursor-pointer inline-block">
       <div className="img-area w-full aspect-h-1 aspect-w-1 bg-secondary-300 rounded-[8px]"></div>
       <header className="absolute top-[5px] right-[5px]">
         <PlaceTag name="식당" />
