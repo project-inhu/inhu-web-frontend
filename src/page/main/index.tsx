@@ -1,5 +1,6 @@
 import { MainBanner } from '@/shared/components/MainBanner';
 import MainLogo from '@/shared/icon/logo.svg';
+import { PlaceCard } from '@/widget/place/PlaceCard';
 
 export const MainPage = () => {
   return (
@@ -12,7 +13,9 @@ export const MainPage = () => {
           <MainBanner></MainBanner>
         </div>
       </header>
-      <main className="flex-1"></main>
+      <main className="flex-1">
+        <PlaceCard />
+      </main>
     </div>
   );
 };

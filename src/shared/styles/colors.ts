@@ -25,6 +25,7 @@ export const COLORS = {
     '900': '#585858',
     '950': '#333333',
   },
+  white: '#FFFFFF',
 } as const;
 
 export type PrimaryColorKey = keyof (typeof COLORS)['primary'];
