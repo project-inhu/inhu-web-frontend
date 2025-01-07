@@ -1,6 +1,11 @@
+import HomeIcon from '@/shared/icon/home-icon.svg';
+
 export const MainPage = () => {
   return (
     <div>
+      <div>
+        <HomeIcon className="fill-black" />
+      </div>
       <p className="font-pretendard font-thin">다람쥐 헛 챗바퀴 뭐 어쩌구</p>
       <p className="font-pretendard font-extralight">
         다람쥐 헛 챗바퀴 뭐 어쩌구

@@ -1,3 +1,4 @@
+import { COLORS } from './src/shared/styles/colors';
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
@@ -12,6 +13,7 @@ const config: Config = {
       fontFamily: {
         pretendard: ['var(--font-pretendard)'],
       },
+      colors: COLORS,
     },
   },
   plugins: [],
