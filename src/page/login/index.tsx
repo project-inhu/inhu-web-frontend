@@ -10,7 +10,7 @@ export const LoginPage = () => {
       </div>
       <div className="logo-area border-2 flex items-center justify-center flex-1">
         <div>
-          <Logo />
+          <Logo className="w-[160px]" />
         </div>
       </div>
       <div className="login-button-area border-2 h-[91px] mb-[57px] mx-auto w-full flex items-center flex-col">
