@@ -7,6 +7,10 @@ import { useRouter } from 'next/navigation';
 export const MyPage = () => {
   const router = useRouter();
 
+  const profileEditBtnClickEvent = () => {
+    router.push('/mypage/edit');
+  };
+
   const goLoginBtnClickEvent = () => {
     router.push('/login');
   };
@@ -32,7 +36,7 @@ export const MyPage = () => {
   };
 
   const logoutBtnClickEvent = () => {
-    alert('준비중입니다.');
+    router.push('/login');
   };
 
   const withdrawalBtnClickEvent = () => {
@@ -60,7 +64,7 @@ export const MyPage = () => {
             <div className="profile-edit-button-area mt-[12px]">
               <button
                 className="px-[12px] py-[6px] text-[12px] text-secondary-800 rounded-[8px] bg-secondary-100"
-                onClick={goLoginBtnClickEvent}
+                onClick={profileEditBtnClickEvent}
               >
                 프로필 설정하기
               </button>

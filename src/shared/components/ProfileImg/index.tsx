@@ -1,10 +1,14 @@
 import ProfileImgIcon from '@/shared/icon/default-profile-icon.svg';
 import { Props } from './type';
 import Image from 'next/image';
+import { COLORS } from '@/shared/styles/colors';
 
-export const ProfileImg = ({ src }: Props) => {
+export const ProfileImg = ({ src, border = '2px' }: Props) => {
   return (
-    <div className="relative w-full h-full rounded-full overflow-hidden border-solid border-[2px] border-secondary-200 bg-secondary-50">
+    <div
+      className="relative w-full h-full rounded-full overflow-hidden bg-secondary-50"
+      style={{ border: `${border} solid ${COLORS.secondary[200]}` }}
+    >
       {!src && (
         <ProfileImgIcon
           className="absolute bottom-0 left-[50%] translate-x-[-50%]"
