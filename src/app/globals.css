@@ -54,3 +54,7 @@ table {
 	border-spacing: 0;
 }
 /* ==== Reset CSS ==== */
+
+.test-border {
+  border: 1px solid black;
+}
