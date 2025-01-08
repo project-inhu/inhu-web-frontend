@@ -47,18 +47,22 @@ export const MyPage = () => {
       <main>
         <div className="profile-area flex">
           <div className="profile-img-area w-[80px] h-[80px] ml-[20px] my-[20px]">
-            <ProfileImg />
+            <ProfileImg
+              src={
+                'https://s3.ap-northeast-2.amazonaws.com/liket-for-dev/profile-img/ff6de973-31c7-4fec-ba76-ae1fd031378e.jpeg'
+              }
+            />
           </div>
           <div className="user-info-area ml-[28px] mt-[28px]">
             <div className="user-name-area">
-              <h2 className="font-semibold text-[18px]">로그인이 필요해요</h2>
+              <h2 className="font-semibold text-[18px]">조총이</h2>
             </div>
             <div className="profile-edit-button-area mt-[12px]">
               <button
                 className="px-[12px] py-[6px] text-[12px] text-secondary-800 rounded-[8px] bg-secondary-100"
                 onClick={goLoginBtnClickEvent}
               >
-                로그인 하러가기
+                프로필 설정하기
               </button>
             </div>
           </div>
