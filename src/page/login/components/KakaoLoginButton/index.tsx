@@ -1,4 +1,4 @@
-import KakaoLoginIcon from '../icon/kakao-login-icon.svg';
+import KakaoLoginIcon from '../../icon/kakao-login-icon.svg';
 
 export const KakaoLoginButton = () => {
   const kakaoBtnClickEvent = () => {

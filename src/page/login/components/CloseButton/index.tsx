@@ -1,7 +1,7 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import CloseIcon from '../icon/close-icon.svg';
+import CloseIcon from '../../icon/close-icon.svg';
 
 export const CloseButton = () => {
   const router = useRouter();

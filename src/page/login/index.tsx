@@ -1,7 +1,7 @@
 'use client';
 
-import { CloseButton } from '@/page/login/components/CloseButton';
-import { KakaoLoginButton } from '@/page/login/components/KakaoLoginButton';
+import { CloseButton } from './components/CloseButton/index';
+import { KakaoLoginButton } from './components/KakaoLoginButton/index';
 import Logo from '@/shared/icon/logo.svg';
 import { useRouter } from 'next/navigation';
 
