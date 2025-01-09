@@ -3,8 +3,6 @@
 import { PlaceSection } from '@/page/main/components/PlaceSection';
 import { MainBanner } from '@/shared/components/MainBanner';
 import MainLogo from '@/shared/icon/logo.svg';
-import { PlaceCard } from '@/widget/place/PlaceCard';
-import ScrollContainer from 'react-indiana-drag-scroll';
 
 export const MainPage = () => {
   return (
