@@ -1,9 +1,15 @@
 import { PlaceTag } from '@/widget/place/PlaceTag';
 import MapIcon from '@/shared/icon/map-icon.svg';
+import { Props } from './type';
 
-export const PlaceCard = () => {
+export const PlaceCard = ({ onClick }: Props) => {
   return (
-    <article className="relative w-[120px] cursor-pointer inline-block">
+    <article
+      className="relative w-[120px] cursor-pointer inline-block"
+      onClick={() => {
+        onClick && onClick();
+      }}
+    >
       <div className="img-area w-full aspect-h-1 aspect-w-1 bg-secondary-300 rounded-[8px]"></div>
       <header className="absolute top-[5px] right-[5px]">
         <PlaceTag name="식당" />
