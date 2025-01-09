@@ -23,7 +23,7 @@ export const BottomTabButton = ({
       </div>
       <p
         className={cn(
-          'mt-[6px]',
+          'mt-[6px] text-[12px] font-normal',
           isActivated ? 'text-primary-400' : 'text-secondary-500'
         )}
       >
