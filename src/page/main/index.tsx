@@ -16,13 +16,15 @@ export const MainPage = () => {
         </div>
       </header>
       <main className="flex-1">
-        <PlaceSection className="mt-[28px]">
+        <PlaceSection className="mt-[28px]" title="인하대 후문에 새로 생긴 곳">
           인하대 후문에
           <br />
           새로 생긴 곳이에요!
         </PlaceSection>
-        <PlaceSection className="mt-[36px]">추천드리는 장소예요!</PlaceSection>
-        <PlaceSection className="mt-[36px]">
+        <PlaceSection className="mt-[36px]" title="추천드리는 장소">
+          추천드리는 장소예요!
+        </PlaceSection>
+        <PlaceSection className="mt-[36px]" title="인하프로러들의 장소">
           인후프로러들의 여긴 어때요?
         </PlaceSection>
       </main>

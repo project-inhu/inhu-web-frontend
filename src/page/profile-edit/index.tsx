@@ -1,9 +1,8 @@
 'use client';
 
 import { BackButton } from '@/page/profile-edit/components/BackButton';
-import { DefaultButton } from '@/shared/components/DefaultButton';
+import { DefaultButton } from '@/shared/components/buttons/DefaultButton';
 import { ProfileImg } from '@/shared/components/ProfileImg';
-import LeftArrowIcon from '@/shared/icon/left-arrow-icon.svg';
 import { useRouter } from 'next/navigation';
 
 export const ProfileEdit = () => {

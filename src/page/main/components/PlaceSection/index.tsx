@@ -7,11 +7,15 @@ import ScrollContainer from 'react-indiana-drag-scroll';
 import RightArrowIcon from '@/shared/icon/right-arrow-icon.svg';
 import { useRouter } from 'next/navigation';
 
-export const PlaceSection = ({ className = '', children }: Props) => {
+export const PlaceSection = ({
+  className = '',
+  children,
+  title = '',
+}: Props) => {
   const router = useRouter();
 
   const placeCardClickEvent = () => {
-    router.push('/place/1');
+    router.push(`/place/1?title=${title}`);
   };
 
   return (
