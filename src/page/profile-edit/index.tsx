@@ -4,10 +4,17 @@ import { BackButton } from '@/page/profile-edit/components/BackButton';
 import { DefaultButton } from '@/shared/components/DefaultButton';
 import { ProfileImg } from '@/shared/components/ProfileImg';
 import LeftArrowIcon from '@/shared/icon/left-arrow-icon.svg';
+import { useRouter } from 'next/navigation';
 
 export const ProfileEdit = () => {
+  const router = useRouter();
+
   const profileImgEditBtnClickEvent = () => {
     alert('준비중입니다!');
+  };
+
+  const SaveBtnClickEvent = () => {
+    router.push('/main/mypage');
   };
 
   return (
@@ -69,7 +76,10 @@ export const ProfileEdit = () => {
           </main>
           <footer className="absolute w-full bottom-[20px] px-[20px]">
             <div className="w-full h-[48px]">
-              <DefaultButton name="변경사항 저장하기" />
+              <DefaultButton
+                name="변경사항 저장하기"
+                onClick={SaveBtnClickEvent}
+              />
             </div>
           </footer>
         </div>

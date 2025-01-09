@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Props } from './type';
 import { cn } from '@/shared/helper/utils';
 
