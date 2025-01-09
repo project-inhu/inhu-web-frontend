@@ -1,6 +1,7 @@
 import { CategoryChip } from '@/shared/components/chips/CategoryChipSmall';
 import { Header } from './components/Header';
 import MapIcon from '@/shared/icon/map-icon.svg';
+import { HorizontalDivider } from '@/shared/components/dividers/HorizontalDivider';
 
 export const PlaceDetailPage = () => {
   return (
@@ -37,6 +38,7 @@ export const PlaceDetailPage = () => {
             </div>
           </main>
         </article>
+        <HorizontalDivider />
       </main>
     </div>
   );
