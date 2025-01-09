@@ -2,6 +2,7 @@ import { CategoryChip } from '@/shared/components/chips/CategoryChipSmall';
 import { Header } from './components/Header';
 import MapIcon from '@/shared/icon/map-icon.svg';
 import { HorizontalDivider } from '@/shared/components/dividers/HorizontalDivider';
+import { PlaceTab } from './components/PlaceTab';
 
 export const PlaceDetailPage = () => {
   return (
@@ -39,6 +40,9 @@ export const PlaceDetailPage = () => {
           </main>
         </article>
         <HorizontalDivider />
+        <div className="place-tab-area mt-[10px]">
+          <PlaceTab />
+        </div>
       </main>
     </div>
   );
