@@ -12,11 +12,11 @@ export const PlaceDetailPage = () => {
         <div className="relative w-full aspect-w-4 aspect-h-3 test-border">
           컨텐츠 이미지 영역
         </div>
-        <article className="m-[20px] test-border">
+        <article className="m-[20px]">
           <header>
             <h2 className="font-medium text-[20px]">상호명</h2>
           </header>
-          <main className="mt-[6px] flex flex-col test-border">
+          <main className="mt-[6px] flex flex-col">
             <div className="flex">
               <div className="map-icon-area mr-[4px]">
                 <MapIcon className="w-[14px] fill-secondary-500" />
@@ -29,12 +29,11 @@ export const PlaceDetailPage = () => {
                 </h3>
               </div>
             </div>
-            <div className="mt-[10px] flex gap-[4px] flex-wrap">
+            <div className="mt-[10px] gap-[4px] h-[20px] flex">
               <CategoryChip>카테고리1</CategoryChip>
               <CategoryChip>카테고리2</CategoryChip>
-              <div className="py-[4px] px-[8px]">
-                {/* TODO: className쓰고 쭉 개발해야함 */}
-                <span className="">(999+)</span>
+              <div className="py-[4px] px-[8px] font-normal text-[10px] text-secondary-900">
+                (999+)
               </div>
             </div>
           </main>
