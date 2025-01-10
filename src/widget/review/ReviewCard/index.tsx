@@ -6,8 +6,6 @@ import { useState } from 'react';
 import { ReviewContent } from '@/widget/review/ReviewCard/components/ReviewContents';
 
 export const ReviewCard = ({}: Props) => {
-  const [isFullContents, setIsFullContents] = useState(false);
-
   const review = {
     author: {
       nickname: '닉네임',

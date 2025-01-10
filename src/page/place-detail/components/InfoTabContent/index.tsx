@@ -34,7 +34,7 @@ export const InfoTabContent = () => {
       </div>
       <div className="w-full h-[1px] bg-secondary-100"></div>
       <div className="m-[20px]">
-        <div className="test-border h-[188px]"></div>
+        <div className="relative overflow-hidden h-[188px] rounded-[8px] border-[1px] border-solid border-secondary-200"></div>
         <div className="mt-[8px] flex text-regular-12-120 text-secondary-500">
           <MapIcon className="w-[14px] fill-secondary-500 mr-[4px]" />
           <span>상호주소가 들어갈 자리예요.</span>

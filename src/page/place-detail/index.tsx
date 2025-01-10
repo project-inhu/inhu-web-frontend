@@ -12,6 +12,7 @@ import { InfoTabContent } from '@/page/place-detail/components/InfoTabContent';
 import { PLACE_TAB_TYPE } from '@/page/place-detail/type';
 import { MenuTabContent } from '@/page/place-detail/components/MenuTabContent';
 import { ReviewTabContent } from '@/page/place-detail/components/ReviewTabContent';
+import { PlaceImgCarousel } from '@/page/place-detail/components/PlaceImgCarousel';
 
 export const PlaceDetailPage = () => {
   const { type } = useGetPlaceTabType();
@@ -20,8 +21,8 @@ export const PlaceDetailPage = () => {
     <div className="relative max-w-[600px] w-full h-[100vh] flex flex-col mx-auto">
       <Header />
       <main className="flex-1 overflow-y-scroll scrollbar-hide">
-        <div className="relative w-full aspect-w-4 aspect-h-3 test-border">
-          컨텐츠 이미지 영역
+        <div className="relative w-full bg-secondary-300">
+          <PlaceImgCarousel />
         </div>
         <article className="m-[20px]">
           <header>
@@ -57,7 +58,7 @@ export const PlaceDetailPage = () => {
         {type === PLACE_TAB_TYPE.MENU && <MenuTabContent />}
         {type === PLACE_TAB_TYPE.REVIEW && <ReviewTabContent />}
       </main>
-      <footer className="flex items-center gap-[16px] h-[60px] bottom-0 w-full py-[px] px-[16px] shadow-[2px_0px_12px_0px_rgba(0,0,0,0.12)]">
+      <footer className="flex items-center gap-[16px] bottom-0 w-full py-[16px] px-[16px] shadow-[2px_0px_12px_0px_rgba(0,0,0,0.12)]">
         <div className="w-[42px] h-[42px]">
           <BookmarkButton />
         </div>

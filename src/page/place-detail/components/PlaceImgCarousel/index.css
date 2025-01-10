@@ -1,0 +1,25 @@
+.carousel .control-dots {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  right: 50%;
+  height: 24px;
+  border-radius: 100px;
+  transform: translateX(50%);
+  width: fit-content;
+  background-color: rgba(237, 237, 237, 0.5); /* 배경 색상 */
+  padding: 0 12px;
+}
+
+.carousel .control-dots .dot {
+  background-color: rgba(0, 0, 0, 1); /* dot 기본 색상 */
+  width: 8px;
+  height: 8px;
+  border-radius: 50%; /* dot 둥글게 */
+  box-shadow: none;
+  margin: 0%;
+}
+
+.carousel .control-dots .dot.selected {
+  background-color: #000000; /* 선택된 dot 색상 */
+}
