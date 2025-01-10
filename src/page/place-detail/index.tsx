@@ -3,6 +3,8 @@ import { Header } from './components/Header';
 import MapIcon from '@/shared/icon/map-icon.svg';
 import { HorizontalDivider } from '@/shared/components/dividers/HorizontalDivider';
 import { PlaceTab } from './components/PlaceTab';
+import { BookmarkButton } from '@/page/place-detail/components/BookmarkButton';
+import { CreateReviewButton } from '@/page/place-detail/components/CreateReviewButton';
 
 export const PlaceDetailPage = () => {
   return (
@@ -43,7 +45,14 @@ export const PlaceDetailPage = () => {
           <PlaceTab />
         </div>
       </main>
-      <footer></footer>
+      <footer className="flex items-center gap-[16px] h-[60px] bottom-0 w-full py-[px] px-[16px] shadow-[2px_0px_12px_0px_rgba(0,0,0,0.12)]">
+        <div className="w-[42px] h-[42px]">
+          <BookmarkButton />
+        </div>
+        <div className="flex-1 h-[42px]">
+          <CreateReviewButton />
+        </div>
+      </footer>
     </div>
   );
 };

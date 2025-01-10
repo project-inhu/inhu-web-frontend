@@ -1,4 +1,7 @@
-export type Props = {
+import { StrictPropsWithChildren } from '@/shared/type/react';
+import { PropsWithChildren } from 'react';
+
+export type Props = PropsWithChildren<{
   /**
    * 버튼 이름
    *
@@ -24,4 +27,4 @@ export type Props = {
    * @default true
    */
   active?: boolean;
-};
+}>;

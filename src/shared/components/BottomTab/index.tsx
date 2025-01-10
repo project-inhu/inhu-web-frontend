@@ -53,7 +53,7 @@ export const BottomTab = () => {
           isActivated={path === '/main/bookmark'}
           onClick={bookmarkBtnClickEvent}
         >
-          <BookmarkIcon />
+          <BookmarkIcon className="w-[24px]" />
         </BottomTabButton>
       </div>
       <div className="w-[25%] h-[56px]">
