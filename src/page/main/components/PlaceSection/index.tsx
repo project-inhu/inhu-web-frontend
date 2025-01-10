@@ -18,15 +18,22 @@ export const PlaceSection = ({
     router.push(`/place/1?title=${title}`);
   };
 
+  const viewAllBtnClickEvent = () => {
+    alert('준비중입니다.');
+  };
+
   return (
     <section className={cn('w-full', className)}>
       <h2 className="relative mx-[20px] text-semibold-20-140">
         {children}
         <button className="absolute bottom-[50%] translate-y-[50%] right-0">
           <div className="flex items-center">
-            <span className="text-regular-12-120 text-secondary-500">
+            <button
+              className="text-regular-12-120 text-secondary-500"
+              onClick={viewAllBtnClickEvent}
+            >
               전체보기
-            </span>
+            </button>
             <RightArrowIcon className="w-[24px]" />
           </div>
         </button>
