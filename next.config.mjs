@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'standalone',
   images: {
     unoptimized: true, // TODO: 배포할 때는 바꿀 것
     remotePatterns: [
