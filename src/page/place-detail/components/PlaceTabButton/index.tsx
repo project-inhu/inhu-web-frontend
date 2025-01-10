@@ -8,7 +8,7 @@ export const PlaceTabButton = ({ active, children, onClick }: Props) => {
         onClick && onClick();
       }}
       className={cn(
-        'w-full h-full text-[14px] font-medium',
+        'w-full h-full text-[14px] font-medium cursor-pointer',
         active
           ? 'text-primary-400 border-b-[2px] border-solid border-primary-400'
           : 'text-secondary-300 border-b-[1px] border-solid border-secondary-300'

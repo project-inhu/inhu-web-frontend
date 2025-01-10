@@ -43,6 +43,7 @@ export const PlaceDetailPage = () => {
           <PlaceTab />
         </div>
       </main>
+      <footer></footer>
     </div>
   );
 };

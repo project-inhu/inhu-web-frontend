@@ -16,21 +16,21 @@ export const PlaceTab = () => {
     const params = new URLSearchParams(searchParams);
     params.set('tab', PLACE_TAB_TYPE.INFO);
 
-    router.push(path + '?' + params.toString());
+    router.replace(path + '?' + params.toString());
   };
 
   const menuBtnClickEvent = () => {
     const params = new URLSearchParams(searchParams);
     params.set('tab', PLACE_TAB_TYPE.MENU);
 
-    router.push(path + '?' + params.toString());
+    router.replace(path + '?' + params.toString());
   };
 
   const reviewBtnClickEvent = () => {
     const params = new URLSearchParams(searchParams);
     params.set('tab', PLACE_TAB_TYPE.REVIEW);
 
-    router.push(path + '?' + params.toString());
+    router.replace(path + '?' + params.toString());
   };
 
   return (

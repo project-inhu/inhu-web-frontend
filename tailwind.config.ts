@@ -1,3 +1,4 @@
+import { FONTS } from './src/shared/styles/text';
 import { COLORS } from './src/shared/styles/colors';
 import type { Config } from 'tailwindcss';
 
@@ -14,6 +15,7 @@ const config: Config = {
         pretendard: ['var(--font-pretendard)'],
       },
       colors: COLORS,
+      fontSize: FONTS,
     },
   },
   corePlugins: {

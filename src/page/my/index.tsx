@@ -1,6 +1,7 @@
 'use client';
 
 import { MyPageLinkButton } from '@/page/my/components/MyPageLinkButton';
+import { HorizontalDivider } from '@/shared/components/dividers/HorizontalDivider';
 import { ProfileImg } from '@/shared/components/ProfileImg';
 import { useRouter } from 'next/navigation';
 
@@ -71,7 +72,7 @@ export const MyPage = () => {
             </div>
           </div>
         </div>
-        <div className="divider h-[6px] bg-secondary-200"></div>
+        <HorizontalDivider />
         <div className="p-[20px] flex flex-col gap-[24px]">
           <div className="my-activity-area">
             <h3 className="text-[16px] font-medium mb-[12px]">나의 활동</h3>

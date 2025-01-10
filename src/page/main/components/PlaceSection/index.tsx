@@ -20,11 +20,13 @@ export const PlaceSection = ({
 
   return (
     <section className={cn('w-full', className)}>
-      <h2 className="relative mx-[20px] font-semibold text-[20px]">
+      <h2 className="relative mx-[20px] text-semibold-20-140">
         {children}
         <button className="absolute bottom-[50%] translate-y-[50%] right-0">
           <div className="flex items-center">
-            <span className="text-[12px] text-secondary-500">전체보기</span>
+            <span className="text-regular-12-120 text-secondary-500">
+              전체보기
+            </span>
             <RightArrowIcon className="w-[24px]" />
           </div>
         </button>

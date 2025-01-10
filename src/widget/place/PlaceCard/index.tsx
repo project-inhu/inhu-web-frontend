@@ -15,14 +15,14 @@ export const PlaceCard = ({ onClick }: Props) => {
         <PlaceTag name="식당" />
       </header>
       <main>
-        <h1 className="place-name-area text-[12px] mt-[8px] line-clamp-2">
+        <h1 className="place-name-area text-medium-14-120 mt-[8px] line-clamp-2">
           상호명 이름
         </h1>
         <div className="flex mt-[7px] items-center">
           <div className="w-[12px] h-[12px]">
             <MapIcon className="w-[12px] fill-secondary-500" />
           </div>
-          <span className="text-secondary-500 text-[10px] font-normal line-clamp-1">
+          <span className="text-secondary-500 text-regular-12-120 font-normal line-clamp-1">
             상호 주소는 한 줄만 보여요상호 주소는 한 줄만 보여요상호 주소는 한
             줄만 보여요상호 주소는 한 줄만 보여요상호 주소는 한 줄만 보여요
           </span>
