@@ -10,6 +10,7 @@ import { CreateReviewButton } from '@/page/place-detail/components/CreateReviewB
 import { useGetPlaceTabType } from '@/page/place-detail/hooks/useGetPlaceTabType';
 import { InfoTabContent } from '@/page/place-detail/components/InfoTabContent';
 import { PLACE_TAB_TYPE } from '@/page/place-detail/type';
+import { MenuTabContent } from '@/page/place-detail/components/MenuTabContent';
 
 export const PlaceDetailPage = () => {
   const { type } = useGetPlaceTabType();
@@ -17,7 +18,7 @@ export const PlaceDetailPage = () => {
   return (
     <div className="relative max-w-[600px] w-full h-[100vh] flex flex-col mx-auto">
       <Header />
-      <main className="flex-1 overflow-y-scroll scrollbar-hide pb-[28px]">
+      <main className="flex-1 overflow-y-scroll scrollbar-hide">
         <div className="relative w-full aspect-w-4 aspect-h-3 test-border">
           컨텐츠 이미지 영역
         </div>
@@ -52,6 +53,7 @@ export const PlaceDetailPage = () => {
           <PlaceTab />
         </div>
         {type === PLACE_TAB_TYPE.INFO && <InfoTabContent />}
+        {type === PLACE_TAB_TYPE.MENU && <MenuTabContent />}
       </main>
       <footer className="flex items-center gap-[16px] h-[60px] bottom-0 w-full py-[px] px-[16px] shadow-[2px_0px_12px_0px_rgba(0,0,0,0.12)]">
         <div className="w-[42px] h-[42px]">
