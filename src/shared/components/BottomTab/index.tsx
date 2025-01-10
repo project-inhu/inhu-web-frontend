@@ -12,7 +12,7 @@ export const BottomTab = () => {
   const router = useRouter();
 
   const homeBtnClickEvent = () => {
-    router.replace('/');
+    router.replace('/main');
   };
 
   const mapBtnClickEvent = () => {
@@ -32,7 +32,7 @@ export const BottomTab = () => {
       <div className="w-[25%] h-[56px]">
         <BottomTabButton
           name="홈"
-          isActivated={path === '/'}
+          isActivated={path === '/' || path === '/main'}
           onClick={homeBtnClickEvent}
         >
           <HomeIcon />
