@@ -1,6 +1,15 @@
-export const MenuCard = () => {
+'use client';
+
+import { Props } from './type';
+
+export const MenuCard = ({ onClick }: Props) => {
   return (
-    <article className="w-full flex gap-[22px] cursor-pointer">
+    <article
+      className="w-full flex gap-[22px] cursor-pointer"
+      onClick={() => {
+        onClick && onClick();
+      }}
+    >
       <div className="img-area w-[100px] h-[100px] overflow-hidden rounded-[8px] border-solid border-secondary-300 border-[1px] bg-secondary-300"></div>
       <div className="content-area flex flex-col justify-center flex-1">
         <h3 className="text-regular-14-120 line-clamp-2">메뉴 이름적는 곳</h3>
