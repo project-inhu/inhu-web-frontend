@@ -14,7 +14,9 @@ export const PlaceDetailPage = () => {
         </div>
         <article className="m-[20px]">
           <header>
-            <h2 className="font-medium text-[20px]">상호명</h2>
+            <h2 className="text-medium-20-120">
+              투썸 플레이스 인천 인하대 후문점
+            </h2>
           </header>
           <main className="mt-[6px] flex flex-col">
             <div className="flex">
@@ -22,10 +24,8 @@ export const PlaceDetailPage = () => {
                 <MapIcon className="w-[14px] fill-secondary-500" />
               </div>
               <div>
-                <h3 className="text-secondary-500 font-normal line-clamp-2">
-                  상호 주소가상호 주소가상호 주소가상호 주소가상호 주소가상호
-                  주소가상호 주소가상호 주소가상호 주소가상호 주소가상호
-                  주소가상호 주소가상호 주소가
+                <h3 className="text-secondary-500 font-normal">
+                  인천광역시 미추홀구 인하로 75 2층,3층
                 </h3>
               </div>
             </div>
