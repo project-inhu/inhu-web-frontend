@@ -1,6 +1,6 @@
 'use client';
 
-import { CategoryChip } from '@/shared/components/chips/CategoryChipSmall';
+import { CategoryChipSmall } from '@/shared/components/chips/CategoryChipSmall';
 import { Header } from './components/Header';
 import MapIcon from '@/shared/icon/map-icon.svg';
 import { HorizontalDivider } from '@/shared/components/dividers/HorizontalDivider';
@@ -11,6 +11,7 @@ import { useGetPlaceTabType } from '@/page/place-detail/hooks/useGetPlaceTabType
 import { InfoTabContent } from '@/page/place-detail/components/InfoTabContent';
 import { PLACE_TAB_TYPE } from '@/page/place-detail/type';
 import { MenuTabContent } from '@/page/place-detail/components/MenuTabContent';
+import { ReviewTabContent } from '@/page/place-detail/components/ReviewTabContent';
 
 export const PlaceDetailPage = () => {
   const { type } = useGetPlaceTabType();
@@ -40,8 +41,8 @@ export const PlaceDetailPage = () => {
               </div>
             </div>
             <div className="mt-[10px] gap-[4px] h-[20px] flex">
-              <CategoryChip>카테고리1</CategoryChip>
-              <CategoryChip>카테고리2</CategoryChip>
+              <CategoryChipSmall>카테고리1</CategoryChipSmall>
+              <CategoryChipSmall>카테고리2</CategoryChipSmall>
               <div className="py-[4px] px-[8px] font-normal text-[10px] text-secondary-900">
                 (999+)
               </div>
@@ -54,6 +55,7 @@ export const PlaceDetailPage = () => {
         </div>
         {type === PLACE_TAB_TYPE.INFO && <InfoTabContent />}
         {type === PLACE_TAB_TYPE.MENU && <MenuTabContent />}
+        {type === PLACE_TAB_TYPE.REVIEW && <ReviewTabContent />}
       </main>
       <footer className="flex items-center gap-[16px] h-[60px] bottom-0 w-full py-[px] px-[16px] shadow-[2px_0px_12px_0px_rgba(0,0,0,0.12)]">
         <div className="w-[42px] h-[42px]">
