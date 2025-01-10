@@ -33,4 +33,11 @@ export type Props = PropsWithClassName<{
    * @example "390 / 336" 배너 커러셀
    */
   aspectRatio?: string;
+
+  /**
+   * 자동으로 회전 여부
+   *
+   * @default false
+   */
+  auto?: boolean;
 }>;

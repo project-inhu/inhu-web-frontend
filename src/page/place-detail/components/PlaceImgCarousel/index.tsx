@@ -1,5 +1,4 @@
 import ImgCarousel from '@/shared/components/ImgCarousel';
-import './index.css';
 
 export const PlaceImgCarousel = () => {
   return (
@@ -9,7 +8,6 @@ export const PlaceImgCarousel = () => {
         'https://img.hani.co.kr/imgdb/resize/2020/1023/160334459702_20201023.JPG',
       ]}
       aspectRatio="4 / 3"
-      className="w-full h-full"
     />
   );
 };

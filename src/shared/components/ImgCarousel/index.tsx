@@ -3,6 +3,7 @@ import { Carousel } from 'react-responsive-carousel';
 import { Props } from './type';
 import { cn } from '@/shared/helper/utils';
 import Image from 'next/image';
+import './index.css';
 
 const ImgCarousel = ({
   imgList,
@@ -10,14 +11,16 @@ const ImgCarousel = ({
   infiniteLoop = true,
   imgAlt = '캐러셀 이미지',
   aspectRatio = '1 / 1',
+  auto = false,
   onClickImg,
 }: Props) => {
   return (
     <Carousel
-      className={cn(className)}
+      className={cn(className, 'w-full h-full')}
       infiniteLoop={infiniteLoop}
       showArrows={false}
       showStatus={false}
+      autoPlay={auto}
       showThumbs={false}
       emulateTouch={true}
       swipeScrollTolerance={10}
@@ -26,7 +29,7 @@ const ImgCarousel = ({
       {imgList.map((path, i) => (
         <div
           key={`carousel-img-${i}`}
-          className="relative"
+          className="relative select-none"
           onClick={() => {
             onClickImg && onClickImg(path, i);
           }}
