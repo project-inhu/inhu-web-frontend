@@ -26,7 +26,7 @@ export const PlaceSection = ({
     <section className={cn('w-full', className)}>
       <h2 className="relative mx-[20px] text-semibold-20-140">
         {children}
-        <button className="absolute bottom-[50%] translate-y-[50%] right-0">
+        <div className="absolute bottom-[50%] translate-y-[50%] right-0">
           <div className="flex items-center">
             <button
               className="text-regular-12-120 text-secondary-500"
@@ -36,7 +36,7 @@ export const PlaceSection = ({
             </button>
             <RightArrowIcon className="w-[24px]" />
           </div>
-        </button>
+        </div>
       </h2>
       <div className="mt-[12px]">
         <ScrollContainer className="flex">
