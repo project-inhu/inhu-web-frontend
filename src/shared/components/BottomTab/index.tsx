@@ -6,6 +6,7 @@ import MapIcon from '@/shared/icon/map-icon.svg';
 import BookmarkIcon from '@/shared/icon/bookmark-icon.svg';
 import MypageIcon from '@/shared/icon/mypage-icon.svg';
 import { usePathname, useRouter } from 'next/navigation';
+import { useEffect } from 'react';
 
 export const BottomTab = () => {
   const path = usePathname();
@@ -26,6 +27,13 @@ export const BottomTab = () => {
   const mypageBtnClickEvent = () => {
     router.replace('/main/mypage');
   };
+
+  useEffect(() => {
+    router.prefetch('/main');
+    router.prefetch('/main/map');
+    router.prefetch('/main/bookmark');
+    router.prefetch('/main/mypage');
+  }, [router]);
 
   return (
     <nav className="flex border-t-[1px] border-solid border-secondary-200">
